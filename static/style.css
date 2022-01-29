@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: #020202;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+nav ul {
+  position: fixed;
+  background: #e98a15;
+  list-style-type: none;
+  width: 100vw;
+}
+
+nav li {
+  float: right;
+}
+
+nav li a {
+  display: block;
+  padding: 20px;
+  margin-right: 15px;
+}
+
+nav li a:hover {
+  background: #8e443d;
+  color: #ece5f0;
+}
+
+#welcome-section {
+  height: 100vh;
+  background: #020202;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome-section h1 {
+  color: #ece5f0;
+  margin-bottom: 20px;
+  font-size: 70px;
+}
+
+#welcome-section p {
+  color: #ba1b1d;
+  text-transform: lowercase;
+  font-size: 30px;
+}
+
+#projects {
+  color: #ece5f0;
+  background: #8e443d;
+}
+
+#projects h1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  margin-bottom: 60px;
+}
+
+.project-tile {
+  height: 500px;
+  width: 400px;
+  background: #ba1b1d;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.project-tile img {
+  height: calc(100% - 4rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-tile p {
+  color: #ece5f0;
+}
+
+@media (min-width: 1290px) {
+  .tiles-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 10vw;
+  }
+}
+
+@media (min-width: 860px) and (max-width: 1290px) {
+  .tiles-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 8vw;
+  }
+}
+
+@media (max-width: 860px) {
+  .tiles-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 25vw;
+  }
+}
+
+#contact {
+  color: #ece5f0;
+  background: #020202;
+  height: 93vh;
+}
+
+#contact h1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  margin-bottom: 60px;
+  display: flex;
+}
+
+#contact img {
+  height: 50px;
+  width: 50px;
+  margin-right: 70px;
+  margin-top: 280px;
+}
+
+#contact img:hover {
+  height: 60px;
+  width: 60px;
+}
+
+.contacts-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
